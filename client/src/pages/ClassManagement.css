@@ -1,0 +1,200 @@
+.class-management-container {
+  min-height: 100vh;
+  padding: 2rem;
+  margin-left: 16rem;
+  background: whitesmoke;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4f46e5;
+  margin-bottom: 2rem;
+}
+
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s;
+}
+
+.btn-add { background-color: #4f46e5; color: white; }
+.btn-add:hover { background-color: #818cf8; }
+
+.btn-search { background-color: #e5e7eb; color: #374151; }
+.btn-search:hover { background-color: #d1d5db; }
+
+.btn-import { background-color: #60a5fa; color: white; }
+.btn-import:hover { background-color: #3b82f6; }
+
+.btn-export { background-color: #34d399; color: white; }
+.btn-export:hover { background-color: #10b981; }
+
+.table-container {
+  background-color: #4f46e5;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+}
+.table th{
+  background-color: #4f46e5;
+  color: white;
+}
+
+.table th, .table td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table th:first-child,
+.table td:first-child {
+  width: 5rem; /* STT nhỏ lại */
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+.table th:nth-child(2),
+.table td:nth-child(2) {
+  width: 110px; /* Mã Lớp nhỏ lại và sát STT */
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.table th:nth-child(3),
+.table td:nth-child(3) {
+  width: 500px;
+  padding-left: 3rem;
+  padding-right: 0.5rem;
+}
+
+.table td:last-child, .table th:last-child {
+  text-align: center;
+  vertical-align: middle;
+  min-height: 48px;
+  height: 48px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: fit-content;
+}
+
+.no-data {
+  text-align: center;
+  padding: 1rem;
+  color: #6b7280;
+}
+
+.btn-link {
+  color: #4f46e5;
+  text-decoration: underline;
+}
+
+.btn-icon {
+  color: #4f46e5;
+}
+
+.btn-icon.delete {
+  color: #ef4444;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.pagination-control select {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+}
+
+.pagination-buttons button {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.modal-content h2 {
+  font-size: 1.5rem;
+  color: #4f46e5;
+  margin-bottom: 1.5rem;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-save {
+  flex: 1;
+  background-color: #818cf8;
+  color: white;
+}
+
+.btn-save:hover {
+  background-color: #6366f1;
+}
+
+.btn-cancel {
+  flex: 1;
+  background-color: #fca5a5;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background-color: #f87171;
+}
